@@ -12,12 +12,14 @@ export default function DynamicEvent() {
           <Video strokeWidth={1.5} size={18} />
         </Badge>
       </div>
+
       <div className="flex mt-2 justify-between items-center">
         <div className="flex flex-col gap-.5">
           <p className="font-medium">Daily Coffee ☕</p>
           <p className="text-xs text-zinc-500">10:00 → 11:00 </p>
         </div>
-        <div className="flex ">
+
+        <div className="flex">
           {Array.from({ length: 3 }).map((_, i) => (
             <Avatar className="h-6 w-6 ml-[-10px]" key={i}>
               <AvatarFallback>AS</AvatarFallback>

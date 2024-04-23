@@ -1,16 +1,13 @@
 'use client'
 
-import { DynamicIslandTypes } from '@/types'
-import { useState } from 'react'
+import useStore from '@/store/useStore'
 import DynamicIsland from './dynamic-island'
 import DynamicCall from './states/dynamic-call'
 import DynamicEvent from './states/dynamic-event'
 import { Button } from './ui/button'
-import useStore from '@/store/useStore'
 
 export default function DynamicIslandWrapper() {
   const { island, setIsland } = useStore()
-  // const [island, setActive] = useState<DynamicIslandTypes>('default')
 
   return (
     <div className="relative p-4 min-h-[250px] h-full flex items-start w-full justify-center">
@@ -19,11 +16,7 @@ export default function DynamicIslandWrapper() {
         {island === 'event' && <DynamicEvent />}
       </DynamicIsland>
       <div className="absolute bottom-4 flex gap-2">
-        <Button
-          variant="secondary"
-          onClick={() => {
-            setIsland('default')
-          }}>
+        <Button variant="secondary" onClick={() => setIsland('default')}>
           Default
         </Button>
         <Button variant="secondary" onClick={() => setIsland('call')}>
