@@ -1,3 +1,6 @@
+
+![Demo Video](/video.mp4)
+
 # Dynamic Island
 
 Built a Dynamic Island similar to the one in new iPhone
