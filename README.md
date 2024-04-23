@@ -1,8 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dynamic Island
 
-## Getting Started
+Built a Dynamic Island similar to the one in new iPhone
 
-First, run the development server:
+## Features
+- Nextjs
+- TailwindCSS
+- Framer motion
+- TypeScript
+- Modular Code
+- Documentation
+- More states coming soon
+
+## How to try
+
+Clone it.
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+
+Second, run the development server:
 
 ```bash
 npm run dev
@@ -16,18 +36,14 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `components/dynamic-island.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Community and support
 
-To learn more about Next.js, take a look at the following resources:
+GitHub issues to file bugs and errors you encounter using Dynamic Island.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Follow me on [GitHub](https://github.com/Khaan25), [LinkedIn](https://www.linkedin.com/in/professional-frontend-web-developer/), [X](https://twitter.com/zia_webdev) and [Portfolio](https://zzia.vercela.app)
 
 ## Deploy on Vercel
 
