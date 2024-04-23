@@ -1,1 +1,1 @@
-export type DynamicIslandProps = 'event' | 'call' | 'default'
+export type DynamicIslandTypes = 'event' | 'call' | 'default'

@@ -1,28 +1,35 @@
 'use client'
 
-import { useState } from "react"
+import { DynamicIslandTypes } from '@/types'
+import { useState } from 'react'
+import DynamicIsland from './dynamic-island'
+import DynamicCall from './states/dynamic-call'
+import DynamicEvent from './states/dynamic-event'
+import { Button } from './ui/button'
+import useStore from '@/store/useStore'
 
 export default function DynamicIslandWrapper() {
-  const [active, setActive] = useState<DynamicIslandProps>('default')
+  const { island, setIsland } = useStore()
+  // const [island, setActive] = useState<DynamicIslandTypes>('default')
 
   return (
     <div className="relative p-4 min-h-[250px] h-full flex items-start w-full justify-center">
-      <DynamicIsland active={active}>
-        {active === 'call' && <DynamicCall />}
-        {active === 'event' && <DynamicEvent />}
+      <DynamicIsland active={island}>
+        {island === 'call' && <DynamicCall />}
+        {island === 'event' && <DynamicEvent />}
       </DynamicIsland>
       <div className="absolute bottom-4 flex gap-2">
         <Button
-          variant={'secondary'}
+          variant="secondary"
           onClick={() => {
-            setActive(() => 'default')
+            setIsland('default')
           }}>
           Default
         </Button>
-        <Button variant={'secondary'} onClick={() => setActive(() => 'call')}>
+        <Button variant="secondary" onClick={() => setIsland('call')}>
           Call
         </Button>
-        <Button variant={'secondary'} onClick={() => setActive(() => 'event')}>
+        <Button variant="secondary" onClick={() => setIsland('event')}>
           Calendar Event
         </Button>
       </div>
