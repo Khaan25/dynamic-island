@@ -1,5 +1,5 @@
+https://github.com/Khaan25/dynamic-island/assets/72739794/cfaec800-9b99-4241-a6d9-9bc86f2fc2fb
 
-![Demo Video](/video.mp4)
 
 # Dynamic Island
 
@@ -17,6 +17,7 @@ Built a Dynamic Island similar to the one in new iPhone
 ## How to try
 
 Clone it.
+
 
 First, install the dependencies:
 
